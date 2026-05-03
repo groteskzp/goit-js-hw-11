@@ -6,7 +6,7 @@ import "izitoast/dist/css/iziToast.min.css";
 import { getImagesByQuery } from './js/pixabay-api';
 import { clearGallery, createGallery, hideLoader, showLoader } from './js/render-functions';
 
-const form = document.querySelector(".form");
+const form = document.querySelector("form");
 const handlerForm = event => {
     event.preventDefault();
     const query = event.currentTarget.elements["search-text"].value.trim();
