@@ -52,14 +52,17 @@ export function createGallery(images) {
 }
 
 export function clearGallery() {
+    if (!sel) return;
     sel.innerHTML = "";
     lightbox = null;
 }
 
 export function showLoader() {
+    if (!loader) return;
     loader.classList.add("is-visible");
 }
 
 export function hideLoader() {
+    if (!loader) return;
     loader.classList.remove("is-visible");
 }
